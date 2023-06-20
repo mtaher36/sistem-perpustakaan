@@ -46,15 +46,24 @@
                         <label for="pengarang" class="form-label">Pengarang</label>
                         <input type="text" class="form-control" id="pengarang" name="pengarang" value="<?= old('pengarang'); ?>">
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
+                        <label for="kategori" class="form-label">Kategori</label>
+                        <select class="form-control form-select" id="kategori" name="kategori" aria-label="Default select example">
+                            <option selected>Pilih Kategori</option>
+                            <?php foreach ($kategori as $k) : ?>
+                                <option value="<?= $k['kategori']; ?>"><?= $k['kategori']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                    <div class="col-3">
                         <label for="tahun" class="form-label">Tahun</label>
                         <input type="number" class="form-control" id="tahun" name="tahun" value="<?= old('tahun'); ?>">
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <label for="jumlah" class="form-label">Jumlah</label>
                         <input type="number" class="form-control" id="jumlah" name="jumlah" value="<?= old('jumlah'); ?>">
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <label for="rak" class="form-label">Rak</label>
                         <input type="number" class="form-control" id="rak" name="rak" value="<?= old('rak'); ?>">
                     </div>

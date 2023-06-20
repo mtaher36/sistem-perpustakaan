@@ -745,13 +745,17 @@ h6 {
   line-height: 0;
   border-radius: 50%;
 }
+.sidebar-nav .nav-item .nav-link.active {
+  color: #4154f1;
+  background-color: #f6f9ff;
+}
 
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
+.sidebar-nav .nav-item .nav-content li a:hover,
+.sidebar-nav .nav.item.nav-content li a.active {
   color: #4154f1;
 }
 
-.sidebar-nav .nav-content a.active i {
+.sidebar-nav .nav-content li a.active i {
   background-color: #4154f1;
 }
 
@@ -818,7 +822,7 @@ h6 {
   flex-grow: 0;
 }
 
-.dashboard .sales-card .card-icon {
+.dashboard .buku-card .card-icon {
   color: #4154f1;
   background: #f6f6fe;
 }
@@ -828,9 +832,14 @@ h6 {
   background: #e0f8e9;
 }
 
-.dashboard .customers-card .card-icon {
-  color: #ff771d;
-  background: #ffecdf;
+.dashboard .members-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+
+.dashboard .peminjaman-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
 }
 
 /* Activity */
@@ -913,24 +922,65 @@ h6 {
   margin-left: 95px;
 }
 
-/* Recent Sales */
-.dashboard .recent-sales {
+/* Recent buku */
+.dashboard .recent-buku {
   font-size: 14px;
 }
 
-.dashboard .recent-sales .table thead {
+.dashboard .recent-buku .table thead {
   background: #f6f6fe;
 }
 
-.dashboard .recent-sales .table thead th {
+.dashboard .recent-buku .table thead th {
   border: 0;
 }
 
-.dashboard .recent-sales .dataTable-top {
+.dashboard .recent-buku .dataTable-top {
   padding: 0 0 10px 0;
 }
 
-.dashboard .recent-sales .dataTable-bottom {
+.dashboard .recent-buku .dataTable-bottom {
+  padding: 10px 0 0 0;
+}
+
+/* Recent peminjaman */
+.dashboard .recent-peminjaman {
+  font-size: 14px;
+}
+
+.dashboard .recent-peminjaman .table thead {
+  background: #f6f6fe;
+}
+
+.dashboard .recent-peminjaman .table thead th {
+  border: 0;
+}
+
+.dashboard .recent-peminjaman .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.dashboard .recent-peminjaman .dataTable-bottom {
+  padding: 10px 0 0 0;
+}
+/* recent-member */
+.dashboard .recent-members {
+  font-size: 14px;
+}
+
+.dashboard .recent-members .table thead {
+  background: #f6f6fe;
+}
+
+.dashboard .recent-members .table thead th {
+  border: 0;
+}
+
+.dashboard .recent-members .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.dashboard .recent-members .dataTable-bottom {
   padding: 10px 0 0 0;
 }
 
@@ -1232,4 +1282,13 @@ h6 {
 
 .sampul {
   width: 70px;
+  height: 90px;
+}
+
+.dashboard .table > tbody > tr > * {
+  vertical-align: middle;
+}
+
+section .table > tbody > tr > * {
+  vertical-align: middle;
 }

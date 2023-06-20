@@ -31,6 +31,7 @@
                                     <th scope="col">#</th>
                                     <th scope="col">Sampul</th>
                                     <th scope="col">Judul</th>
+                                    <th scope="col">Kategori</th>
                                     <th scope="col">Penerbit</th>
                                     <th scope="col">Pengarang</th>
                                     <th scope="col">Tahun</th>
@@ -44,8 +45,9 @@
                                 <?php foreach ($buku as $k) : ?>
                                     <tr>
                                         <th scope="row"><?= $i++; ?></th>
-                                        <td><img src="/img/<?= $k['sampul']; ?>" alt="" class="sampul"></td>
+                                        <td><img src="/img/cover/<?= $k['sampul']; ?>" alt="" class="sampul"></td>
                                         <td><?= $k['judul']; ?></td>
+                                        <td><?= $k['kategori']; ?></td>
                                         <td><?= $k['penerbit']; ?></td>
                                         <td><?= $k['pengarang']; ?></td>
                                         <td><?= $k['tahun']; ?></td>

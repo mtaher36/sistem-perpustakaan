@@ -17,7 +17,9 @@ class Modules extends BaseModules
      *
      * @var bool
      */
-    public $enabled = true;
+    public $enabled = [
+        'Myth\Auth',
+    ];
 
     /**
      * --------------------------------------------------------------------------
